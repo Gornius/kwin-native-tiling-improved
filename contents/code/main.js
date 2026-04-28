@@ -19,7 +19,6 @@ workspace.windowAdded.connect((window) => {
 });
 
 // Unmaximize to tile feature
-
 function registerUnmaximizeToTileHooks(window) {
   window.maximizedAboutToChange.connect((futureMaximizeMode) =>
     aboutToMaximizeHook(window, futureMaximizeMode),
