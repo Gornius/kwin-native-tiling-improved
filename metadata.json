@@ -1,0 +1,20 @@
+{
+  "KPlugin": {
+    "Name": "Native Tiling Improved",
+    "Description": "Improves various interactions with KWin's native tiling capabilities",
+    "Icon": "preferences-system-windows",
+    "Authors": [
+      {
+        "Email": "rafal.cisek121@gmail.com",
+        "Name": "Gornius"
+      }
+    ],
+    "Id": "nativeTilingImproved",
+    "Version": "0.1.0",
+    "License": "GPLv3",
+    "Website": "https://github.com/gornius/kwin-native-tiling-improved"
+  },
+  "X-Plasma-API": "javascript",
+  "X-Plasma-MainScript": "code/main.js",
+  "KPackageStructure": "KWin/Script"
+}
