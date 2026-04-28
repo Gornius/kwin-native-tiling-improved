@@ -1,3 +1,5 @@
+console.log("---- nativeTilingImproved loaded ----");
+
 // Logging helpers
 const gLog_enabled = false;
 
