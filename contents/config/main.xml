@@ -7,5 +7,8 @@
     <entry name="unmaximizeToTile" type="bool">
       <default>true</default>
     </entry>
+    <entry name="raiseTogether" type="bool">
+      <default>true</default>
+    </entry>
   </group>
 </kcfg>
