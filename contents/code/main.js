@@ -9,6 +9,11 @@ function gLog(section, object) {
   }
 }
 
+// Config getters
+function getUnmaximizeToTileEnabled() {
+  return readConfig("unmaximizeToTile", true);
+}
+
 // Hooks registration
 for (const window of workspace.stackingOrder) {
   registerUnmaximizeToTileHooks(window);
@@ -40,7 +45,7 @@ function aboutToMaximizeHook(window, futureMaximizeMode) {
 
 function maximizeHook(window) {
   const tile = temporaryWindowTiles[window];
-  if (window.maximizeMode === 0) {
+  if (window.maximizeMode === 0 && getUnmaximizeToTileEnabled()) {
     window.tile = tile;
   }
   gLog("maximizeHookRan", window);
