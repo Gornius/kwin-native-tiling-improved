@@ -1,3 +1,7 @@
 [tasks.package]
+dir = "./"
 alias = 'pkg'
-run = 'tar -cf native-tiling-improved.kwinscript contents/ metadata.json'
+run = 'tar -cf native-tiling-improved-v$(jq -r .KPlugin.Version metadata.json).kwinscript contents/ metadata.json'
+
+[tools]
+jq = "1.8.1"
