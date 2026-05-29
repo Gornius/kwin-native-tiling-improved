@@ -82,9 +82,6 @@ function aboutToMaximizeHook(window, futureMaximizeMode) {
   if (window.maximizeMode === 0) {
     temporaryWindowTiles[window] = window.tile;
   }
-  if (window.maximizeMode !== 0) {
-    window.tile = tile;
-  }
   gLog("aboutToMaximizeHookRan", window);
 }
 
