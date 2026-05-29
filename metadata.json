@@ -10,7 +10,7 @@
       }
     ],
     "Id": "native-tiling-improved",
-    "Version": "0.1.0",
+    "Version": "0.1.1",
     "License": "GPLv3",
     "Website": "https://github.com/gornius/kwin-native-tiling-improved"
   },
